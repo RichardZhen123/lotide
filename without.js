@@ -1,4 +1,4 @@
-const assertArraysEqual = function (arr1, arr2) {
+const assertArraysEqual = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return console.log(`❌❌❌ Assertion Failed: ${arr1} !== ${arr2}`);
   }
@@ -10,9 +10,9 @@ const assertArraysEqual = function (arr1, arr2) {
   }
 
   return console.log(`✅✅✅ Assertion Pased: ${arr1} === ${arr2}`);
-}
+};
 
-const eqArrays = function (arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -24,7 +24,7 @@ const eqArrays = function (arr1, arr2) {
   }
 
   return true;
-}
+};
 
 const without = function(source, itemsToRemove) {
   let x = 0;
@@ -40,9 +40,9 @@ const without = function(source, itemsToRemove) {
   let copyOfSource = source.slice ();
 
   copyOfSource.splice(x,1);
-  console.log(copyOfSource);
-}
+  return copyOfSource;
+};
 
 
-assetwithout([1, 2, 3], [1]) // => [2, 3]
-without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
+console.log(without([1, 2, 3], [1])); // => [2, 3]
+console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]
