@@ -7,7 +7,7 @@ const assertEqual = function(actual, expected) {
 };
 
 const countLetters = function(sentence) {
-  let individLetters = sentence.split("");
+  let individLetters = sentence.split(" ").join("");
   const result = {};
   let total = 0;
   firstLetter = "";
@@ -24,4 +24,4 @@ const countLetters = function(sentence) {
   return result;
 }
 
-console.log(countLetters('aaabbbccc'));
+console.log(countLetters('aaabbbccc 123'));
