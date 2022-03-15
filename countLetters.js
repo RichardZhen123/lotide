@@ -23,5 +23,3 @@ const countLetters = function(sentence) {
   }
   return result;
 }
-
-console.log(countLetters('aaabbbccc 123'));
