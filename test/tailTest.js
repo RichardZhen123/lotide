@@ -1,3 +1,8 @@
 const tail = require('../tail.js')
+const assert = require('chai').assert;
 
-console.log(tail([1,2,3,4]));
+describe("#tail", () => {
+  it("returns [2, 3, 4] for [1, 2, 3, 4]", () => {
+    assert.deepEqual(tail([1, 2, 3, 4]), [2, 3, 4])
+  });
+});
